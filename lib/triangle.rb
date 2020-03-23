@@ -26,14 +26,14 @@ class Triangle
   end
 
   def kind
-    if valid?
-      binding.pry
-      if @triangle_sides.include? (0)
+     if @triangle_sides.include? (0)
         # begin
         raise TriangleError
         # end 
      else 
 
+    if valid?
+      binding.pry
       if @triangle_sides.uniq.length == 1
          :equilateral
       elsif @triangle_sides.uniq.length == 2

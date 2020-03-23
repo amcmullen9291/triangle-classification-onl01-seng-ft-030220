@@ -30,7 +30,7 @@ class Triangle
         # begin
         raise TriangleError
         # end 
-     else 
+     end
 
     if valid?
       binding.pry

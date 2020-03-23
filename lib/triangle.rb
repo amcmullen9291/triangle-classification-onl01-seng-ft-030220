@@ -1,4 +1,4 @@
-
+require "pry"
 class Triangle
   
   class TriangleError < StandardError
@@ -27,6 +27,7 @@ class Triangle
 
   def kind
     if valid?
+      binding.pry
       if @triangle_sides.include? (0)
         # begin
         raise TriangleError

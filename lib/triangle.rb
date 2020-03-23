@@ -33,7 +33,7 @@ class Triangle
      end
 
     if valid?
-      binding.pry
+      # binding.pry
       if @triangle_sides.uniq.length == 1
          :equilateral
       elsif @triangle_sides.uniq.length == 2

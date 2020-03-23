@@ -30,7 +30,6 @@ class Triangle
       if @triangle_sides.include? (0)
         begin
         raise TriangleError
-        rescue TriangleError
         end 
      else 
 

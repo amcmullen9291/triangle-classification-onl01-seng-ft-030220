@@ -26,11 +26,6 @@ class Triangle
   end
 
   def kind
-     if @triangle_sides.include? (0)
-        # begin
-        raise TriangleError
-        # end 
-     end
 
     if valid?
       # binding.pry
@@ -41,7 +36,10 @@ class Triangle
       else
          :scalene
       end
-      
+    else
+        raise TriangleError
+     end
+
     end
   end
 end 

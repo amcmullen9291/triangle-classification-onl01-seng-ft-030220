@@ -28,9 +28,9 @@ class Triangle
   def kind
     if valid?
       if @triangle_sides.include? (0)
-        begin
+        # begin
         raise TriangleError
-        end 
+        # end 
      else 
 
       if @triangle_sides.uniq.length == 1
